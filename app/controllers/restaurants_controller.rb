@@ -20,6 +20,7 @@ class RestaurantsController < ApplicationController
 
     def show 
         @restaurants = Restaurant.all
+        @review = Review.new 
     end 
 
     private
